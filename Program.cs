@@ -46,7 +46,7 @@ namespace Test
                 Perimetr= Math.Round(Perimetr, 2);
                 Console.WriteLine($"Perimeter is\t{Perimetr}");
 
-                
+                //Výpočet plochy trojúhelníku
                 double s = (AB + AC + BC) / 2;
                 Square = Math.Sqrt(s * (s - AB) * (s - AC) * (s - BC));
                 Square = Math.Round(Square, 2);
