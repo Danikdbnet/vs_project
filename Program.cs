@@ -40,23 +40,36 @@ namespace Test
                 Console.WriteLine($"Point C ({x3},{y3})");
 
                 Console.WriteLine("_________________________________\n");
+
+                //Výpočet obvodu trojúhelníku
                 Perimetr = (AB + AC + BC);
                 Perimetr= Math.Round(Perimetr, 2);
                 Console.WriteLine($"Perimeter is\t{Perimetr}");
+
+                
                 double s = (AB + AC + BC) / 2;
                 Square = Math.Sqrt(s * (s - AB) * (s - AC) * (s - BC));
                 Square = Math.Round(Square, 2);
                 Console.WriteLine($"Square is \t{Square}");
                 Console.WriteLine("_________________________________\n");
+
+
+                
                 AB = Math.Round(AB, 2);
                 AC = Math.Round(AC, 2);
                 BC = Math.Round(BC, 2);
+
+                
                 Console.WriteLine($"AB side has \t{AB} points");
                 Console.WriteLine($"AC side has \t{AC} points");
                 Console.WriteLine($"BC side has \t{BC} points");
                 Console.WriteLine("_________________________________\n");
 
+                
+                
                 double Hypotinuse = Math.Max(AB, Math.Max(AC, BC));
+                
+                
                 double katet1 = 0;
                 double katet2 = 0;
                 if (AB != Hypotinuse) { katet1 = AB; }
