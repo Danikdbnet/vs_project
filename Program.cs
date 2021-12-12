@@ -33,10 +33,12 @@ namespace Test
             
             if (AB + AC > BC && AC + BC > AB && BC + AB > AC)
             {
+                //Vypisuje souradnice trech pointu
                 Console.WriteLine("Triangle exist and has 3 points:\n");                            
                 Console.WriteLine($"Point A ({x1},{y1})");
                 Console.WriteLine($"Point B ({x2},{y2})");
                 Console.WriteLine($"Point C ({x3},{y3})");
+
                 Console.WriteLine("_________________________________\n");
                 Perimetr = (AB + AC + BC);
                 Perimetr= Math.Round(Perimetr, 2);
