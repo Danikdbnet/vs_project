@@ -66,10 +66,10 @@ namespace Test
                 Console.WriteLine("_________________________________\n");
 
                 
-                
+                //Vypočítá délku nejdelší strany
                 double Hypotinuse = Math.Max(AB, Math.Max(AC, BC));
                 
-                
+                //Určuje pravoúhlý trojúhelník nebo ne
                 double katet1 = 0;
                 double katet2 = 0;
                 if (AB != Hypotinuse) { katet1 = AB; }
