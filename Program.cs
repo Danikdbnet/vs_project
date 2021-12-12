@@ -1,10 +1,11 @@
-﻿using System;
+using System;
 namespace Test
 {
     class Program
     {
         static void Main(string[] args)
         {
+            //Testing Marks
             //Program žádá uživatele o zadání souřadnic bodů
             Console.Write($"Enter x for point of triangle A: ");
             double x1 = Convert.ToDouble(Console.ReadLine());
@@ -23,18 +24,20 @@ namespace Test
 
             //Určuje délky 3 stran pomocí Pythagorovy věty
             double AB = Math.Sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
-            double AC= Math.Sqrt((x1 - x3) * (x1 - x3) + (y1 - y3) * (y1 - y3));
-            double BC= Math.Sqrt((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3));
+            double AC = Math.Sqrt((x1 - x3) * (x1 - x3) + (y1 - y3) * (y1 - y3));
+            double BC = Math.Sqrt((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3));
 
 
             //Zavádí dvě proměnné, které budou použity v dalších výpočtech
-            double Square =0;
+            double Square = 0;
             double Perimetr;
-            
+
             if (AB + AC > BC && AC + BC > AB && BC + AB > AC)
             {
                 //Vypisuje souradnice trech pointu
+
                 Console.WriteLine("Triangle exist and has 3 points:\n");                            
+
                 Console.WriteLine($"Point A ({x1},{y1})");
                 Console.WriteLine($"Point B ({x2},{y2})");
                 Console.WriteLine($"Point C ({x3},{y3})");
@@ -43,7 +46,7 @@ namespace Test
 
                 //Výpočet obvodu trojúhelníku
                 Perimetr = (AB + AC + BC);
-                Perimetr= Math.Round(Perimetr, 2);
+                Perimetr = Math.Round(Perimetr, 2);
                 Console.WriteLine($"Perimeter is\t{Perimetr}");
 
                 //Výpočet plochy trojúhelníku
@@ -54,7 +57,7 @@ namespace Test
                 Console.WriteLine("_________________________________\n");
 
 
-                //Redukce desetinných míst na dvě
+                 //Redukce desetinných míst na dvě
                 AB = Math.Round(AB, 2);
                 AC = Math.Round(AC, 2);
                 BC = Math.Round(BC, 2);
@@ -65,11 +68,12 @@ namespace Test
                 Console.WriteLine($"BC side has \t{BC} points");
                 Console.WriteLine("_________________________________\n");
 
-                
                 //Vypočítá délku nejdelší strany
                 double Hypotinuse = Math.Max(AB, Math.Max(AC, BC));
                 
                 //Určuje pravoúhlý trojúhelník nebo ne
+                double Hypotinuse = Math.Max(AB, Math.Max(AC, BC));
+
                 double katet1 = 0;
                 double katet2 = 0;
                 if (AB != Hypotinuse) { katet1 = AB; }
@@ -80,19 +84,21 @@ namespace Test
                 }
                 if (BC != Hypotinuse) { katet2 = BC; }
 
-                if ((katet1 * katet2)/2 == Square)
+                if ((katet1 * katet2) / 2 == Square)
                 {
                     Console.WriteLine("This triangle is rectangular");
                 }
+
                 else 
                 {
                     Console.WriteLine("This triangle is not rectangular")
                 }
+
             }
             else
             {
-                Console.WriteLine("Triangle doesn't exist");               
-            }                                  
+                Console.WriteLine("Triangle doesn't exist");
+            }
             Console.ReadLine();
         }
     }
