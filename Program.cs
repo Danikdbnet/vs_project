@@ -5,6 +5,7 @@ namespace Test
     {
         static void Main(string[] args)
         {
+            //Testing Marks
             //Program žádá uživatele o zadání souřadnic bodů
             Console.Write($"Enter x for point of triangle A: ");
             double x1 = Convert.ToDouble(Console.ReadLine());
