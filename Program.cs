@@ -59,7 +59,7 @@ namespace Test
                 AC = Math.Round(AC, 2);
                 BC = Math.Round(BC, 2);
 
-                //Write length of all 3 sides
+                //Vypíše délku tří stran
                 Console.WriteLine($"AB side has \t{AB} points");
                 Console.WriteLine($"AC side has \t{AC} points");
                 Console.WriteLine($"BC side has \t{BC} points");
