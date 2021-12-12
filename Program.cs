@@ -54,7 +54,7 @@ namespace Test
                 Console.WriteLine("_________________________________\n");
 
 
-                
+                //Redukce desetinných míst na dvě
                 AB = Math.Round(AB, 2);
                 AC = Math.Round(AC, 2);
                 BC = Math.Round(BC, 2);
