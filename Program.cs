@@ -18,14 +18,7 @@ namespace Test
             Console.Write($"Enter y for point of triangle C: ");
             double y3 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("_________________________________\n");
-            /*double x1 = 4;
-            double y1 = 3;
-
-            double x2 = 6;
-            double y2 = 5;
-
-            double x3 = 6;                       
-            double y3 = 3;*/
+            
 
             //delky stran
             double AB = Math.Sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
