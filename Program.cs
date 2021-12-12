@@ -4,7 +4,8 @@ namespace Test
     class Program
     {
         static void Main(string[] args)
-        {          
+        {
+            //Program žádá uživatele o zadání souřadnic bodů
             Console.Write($"Enter x for point of triangle A: ");
             double x1 = Convert.ToDouble(Console.ReadLine());
             Console.Write($"Enter y for point of triangle A: ");
@@ -18,16 +19,16 @@ namespace Test
             Console.Write($"Enter y for point of triangle C: ");
             double y3 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("_________________________________\n");
-            
 
-            //delky stran
+
+            //Určuje délky stran pomocí Pythagorovy věty
             double AB = Math.Sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
             double AC= Math.Sqrt((x1 - x3) * (x1 - x3) + (y1 - y3) * (y1 - y3));
             double BC= Math.Sqrt((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3));
 
 
-
-            double Square=0;
+            //Zavádí dvě proměnné, které budou použity v dalších výpočtech
+            double Square =0;
             double Perimetr;
             
             if (AB + AC > BC && AC + BC > AB && BC + AB > AC)
