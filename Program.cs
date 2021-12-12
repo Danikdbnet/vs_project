@@ -84,6 +84,10 @@ namespace Test
                 {
                     Console.WriteLine("This triangle is rectangular");
                 }
+                else 
+                {
+                    Console.WriteLine("This triangle is not rectangular")
+                }
             }
             else
             {
