@@ -6,7 +6,7 @@ namespace Test
         static void Main(string[] args)
         {
             //Testing Marks
-            //Program žádá uživatele o zadání souřadnic bodů 1
+            //Program žádá uživatele o zadání souřadnic bodu
             Console.Write($"Enter x for point of triangle A: ");
             double x1 = Convert.ToDouble(Console.ReadLine());
             Console.Write($"Enter y for point of triangle A: ");
@@ -22,13 +22,13 @@ namespace Test
             Console.WriteLine("_________________________________\n");
 
 
-            //Určuje délky 3 stran pomocí Pythagorovy věty 2
+            //Určuje délky 3 stran pomocí Pythagorovy věty 
             double AB = Math.Sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
             double AC = Math.Sqrt((x1 - x3) * (x1 - x3) + (y1 - y3) * (y1 - y3));
             double BC = Math.Sqrt((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3));
 
 
-            //Zavádí dvě proměnné, které budou použity v dalších výpočtech 3
+            //Zavádí dvě proměnné, které budou použity v dalších výpočtech 
             double Square = 0;
             double Perimetr;
 
@@ -61,6 +61,7 @@ namespace Test
                 AB = Math.Round(AB, 2);
                 AC = Math.Round(AC, 2);
                 BC = Math.Round(BC, 2);
+                
 
                 //Vypíše délku tří stran
                 Console.WriteLine($"AB side has \t{AB} points");
@@ -89,7 +90,7 @@ namespace Test
                     Console.WriteLine("This triangle is rectangular");
                 }
 
-                else 
+                else //Vypíše, že trojúhelník není pravoúhlý
                 {
                     Console.WriteLine("This triangle is not rectangular")
                 }
