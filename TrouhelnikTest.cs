@@ -86,7 +86,7 @@ namespace TrouhelnikLib
             double expected = 14.63;
             Assert.AreEqual(expected, actual);
         }
-
+//0
         [TestMethod]
         public void Test_If_Rectangular_()
         {
