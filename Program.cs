@@ -28,7 +28,7 @@ namespace Test
             double BC = Math.Sqrt((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3));
 
 
-            //Zavádí dvě proměnné, které budou použity v dalších výpočtech
+            //Zavádí dvě proměnné, které budou použity v dalších výpočtech 3
             double Square = 0;
             double Perimetr;
 
