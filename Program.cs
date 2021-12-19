@@ -6,7 +6,7 @@ namespace Test
         static void Main(string[] args)
         {
             //Testing Marks
-            //Program žádá uživatele o zadání souřadnic bodů
+            //Program žádá uživatele o zadání souřadnic bodů 1
             Console.Write($"Enter x for point of triangle A: ");
             double x1 = Convert.ToDouble(Console.ReadLine());
             Console.Write($"Enter y for point of triangle A: ");
@@ -22,13 +22,13 @@ namespace Test
             Console.WriteLine("_________________________________\n");
 
 
-            //Určuje délky 3 stran pomocí Pythagorovy věty
+            //Určuje délky 3 stran pomocí Pythagorovy věty 2
             double AB = Math.Sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
             double AC = Math.Sqrt((x1 - x3) * (x1 - x3) + (y1 - y3) * (y1 - y3));
             double BC = Math.Sqrt((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3));
 
 
-            //Zavádí dvě proměnné, které budou použity v dalších výpočtech
+            //Zavádí dvě proměnné, které budou použity v dalších výpočtech 3
             double Square = 0;
             double Perimetr;
 
