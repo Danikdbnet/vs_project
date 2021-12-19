@@ -9,7 +9,7 @@ namespace TrouhelnikLib
         [TestMethod]
         public void Test_AB_7_3_8_9()
         {
-            //arrange
+            //arrange small values
             double x1 = 7; double y1 = 3; double x2 = 8; double y2 = 9;
             double expected = 6.08;
             double actual = Math.Sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
@@ -20,7 +20,7 @@ namespace TrouhelnikLib
         [TestMethod]
         public void Test_AB_4_5_9_7()
         {
-            //arrange
+            //arrange small values
             double x1 = 4; double y1 = 5; double x2 = 9; double y2 = 7;
             double expected2 = 5.39;
             double actual2 = Math.Sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
@@ -31,7 +31,7 @@ namespace TrouhelnikLib
         [TestMethod]
         public void Test_AB_500_11111111_4888888_555555()
         {
-            //arrange
+            //arrange large values
             double x1 = 500; double y1 = 11111111; double x2 = 4888888; double y2 = 555555;
             double expected = 11632544.85;
             double actual = Math.Sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
