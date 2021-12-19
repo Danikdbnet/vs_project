@@ -22,7 +22,7 @@ namespace Test
             Console.WriteLine("_________________________________\n");
 
 
-            //Určuje délky 3 stran pomocí Pythagorovy věty
+            //Určuje délky 3 stran pomocí Pythagorovy věty 2
             double AB = Math.Sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
             double AC = Math.Sqrt((x1 - x3) * (x1 - x3) + (y1 - y3) * (y1 - y3));
             double BC = Math.Sqrt((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3));
